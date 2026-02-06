@@ -194,7 +194,7 @@ async function loginFoodPartner(req,res) {
             id:foodPartner._id
         },process.env.JWT_SECRET);
 
-        res.cookie("toekn",token);
+        res.cookie("token",token);
 
         res.status(200).json({
             message:"Food Partner logged in Successfully",
